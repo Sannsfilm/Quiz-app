@@ -1,10 +1,86 @@
-body {
-  font-size: 16px;
-  font-family: sans-serif;
+* {
+  box-sizing: border-box;
 }
+
+body {
+  font-family: sans-serif;
+  background-image: url(./pict/background1.png);
+}
+
 .header {
-  background-color: aquamarine;
+  color: white;
+  background-color: rgba(129, 242, 242, 0.9);
+  border: solid rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
+  margin-top: 50px;
+  padding: 0px 10px 0px 10px;
+  box-shadow: 1px 1px 15px 15px rgba(201, 97, 205, 205);
+}
+
+.container {
   width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.question-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   justify-content: center;
+  align-items: center;
+  background-color: rgba(123, 104, 238, 0.5);
+  border: solid white 1px;
+  border-radius: 20px;
+  margin: 30px 30px 30px 30px;
+  padding: 40px 40px 40px 40px;
+  box-shadow: 1px 1px 15px 15px rgba(70, 226, 228, 200);
+  position: relative;
+}
+
+.bookmark {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: none;
+  border: none;
+  font-size: 50px;
+}
+
+#question-text {
+  color: aliceblue;
+}
+
+.categories-tags {
+  display: flex;
+  flex-direction: row;
+}
+
+.first-card {
+  color: white;
+}
+
+.answer {
+  background-color: rgb(77, 77, 241);
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  padding: 15px;
+  border: solid wheat;
+  border-radius: 10px;
+  margin: 10px 10px 10px 10px;
+}
+
+#tags {
+  color: rgb(0, 208, 227);
+  display: flex;
+  gap: 20px;
 }
