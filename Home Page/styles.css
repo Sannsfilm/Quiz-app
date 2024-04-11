@@ -108,16 +108,26 @@ body {
 /* footer */
 
 .footer {
+  position: fixed;
   color: white;
   display: flex;
-  justify-content: space-between;
-  font-size: 60px;
   text-decoration: none;
   gap: 40px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(177 99 221);
   border-radius: 20px;
-  padding: 15px;
+  padding: 5px;
   box-shadow: 4px 6px 20px 9px rgb(130, 64, 152);
+  justify-content: center;
+  font-size: 40px;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.footer a {
+  height: 100px;
 }
 
 .footer a:hover {
