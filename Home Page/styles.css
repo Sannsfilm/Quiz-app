@@ -9,12 +9,11 @@ body {
 
 .header {
   color: white;
-  background-color: rgba(129, 242, 242, 0.9);
-  border: solid rgba(255, 255, 255, 0.9);
+  background-color: rgb(177 99 221);
   border-radius: 4px;
   margin-top: 50px;
   padding: 0px 10px 0px 10px;
-  box-shadow: 1px 1px 15px 15px rgba(201, 97, 205, 205);
+  box-shadow: 1px 1px 15px 15px rgb(130, 64, 152);
 }
 
 .container {
@@ -35,12 +34,12 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
-  background-color: rgba(123, 104, 238, 0.5);
-  border: solid white 1px;
+  background-color: rgb(177 99 221);
+  border: solid rgb(166 83 193) 1px;
   border-radius: 20px;
   margin: 30px 30px 30px 30px;
   padding: 40px 40px 40px 40px;
-  box-shadow: 1px 1px 15px 15px rgba(70, 226, 228, 200);
+  box-shadow: 4px 6px 20px 9px rgb(130, 64, 152);
   position: relative;
 }
 
@@ -53,6 +52,26 @@ body {
   font-size: 50px;
 }
 
+.bookmark-checked {
+  height: 55px;
+  fill: rgb(158 192 255);
+  stroke-miterlimit: 10;
+  stroke-width: 8px;
+  position: relative;
+  top: -3px;
+  right: 10px;
+}
+
+.bookmark-unchecked {
+  height: 55px;
+  fill: rgb(139, 69, 162);
+  stroke-miterlimit: 10;
+  stroke-width: 8px;
+  position: relative;
+  top: -3px;
+  right: 10px;
+}
+
 #question-text {
   color: aliceblue;
 }
@@ -62,25 +81,26 @@ body {
   flex-direction: row;
 }
 
-.first-card {
+.card {
   color: white;
 }
 
 .answer {
-  background-color: rgb(77, 77, 241);
+  background-color: rgb(158 192 255);
   color: white;
   text-decoration: none;
   display: inline-block;
-  width: 100px;
+  width: 200px;
   height: 50px;
-  padding: 15px;
-  border: solid wheat;
+  padding: 12px 0px 0px 0px;
+  border: solid #a1a2f9;
   border-radius: 10px;
-  margin: 10px 10px 10px 10px;
+  margin: auto;
 }
 
 #tags {
-  color: rgb(0, 208, 227);
+  color: rgb(255, 255, 255);
   display: flex;
   gap: 20px;
+  justify-content: flex-start;
 }
