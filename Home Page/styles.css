@@ -114,4 +114,14 @@ body {
   font-size: 60px;
   text-decoration: none;
   gap: 40px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 4px 6px 20px 9px rgb(130, 64, 152);
+}
+
+.footer a:hover {
+  background-color: #adaeff;
+  box-shadow: 0 8px 16px 0 rgba(207, 100, 97, 0.4);
+  border-radius: 15px;
 }
