@@ -104,3 +104,14 @@ body {
   gap: 20px;
   justify-content: flex-start;
 }
+
+/* footer */
+
+.footer {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 60px;
+  text-decoration: none;
+  gap: 40px;
+}
