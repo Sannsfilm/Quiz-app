@@ -54,7 +54,7 @@ body {
   border: solid rgb(166 83 193) 1px;
   border-radius: 20px;
   margin: 30px 30px 30px 30px;
-  padding: 40px 40px 40px 40px;
+  padding: 40px 40px 0px 40px;
   box-shadow: 4px 6px 20px 9px rgb(130, 64, 152);
   position: relative;
   margin-top: 30px;
@@ -147,7 +147,7 @@ body {
 }
 
 .footer a {
-  height: 100px;
+  height: 65px;
 }
 
 .footer a:hover {
@@ -164,4 +164,87 @@ body {
 .home-footer {
   background-color: #9ec0ff;
   border-radius: 25px;
+}
+
+.profile-footer {
+  background-color: #9ec0ff;
+  border-radius: 25px;
+}
+
+/*profile */
+
+.container-profile {
+  margin: 110px 0 110px 0;
+}
+
+.photo-and-name {
+  display: flex;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.photo-and-name p {
+  margin: 0 30px 0px 30px;
+}
+.counter-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  padding-top: 20px;
+  color: white;
+  background-color: #b063dd87;
+}
+.bookmark-counter {
+  display: flex;
+  gap: 10px;
+}
+.Question-counter {
+  display: flex;
+  gap: 10px;
+}
+
+.setting-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.button {
+  width: 120px; /* Lebar tombol */
+  height: 40px; /* Tinggi tombol */
+  border-radius: 14px;
+  font-size: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: w;
+}
+
+.button:hover {
+  background-color: rgb(92, 159, 247);
+}
+
+.main-profile {
+  background-color: #b063dd87;
+  padding: 0 0 30 0;
+}
+
+.bookmark-checked-profile {
+  height: 25px;
+  fill: rgb(158 192 255);
+  stroke-miterlimit: 10;
+  stroke-width: 8px;
+  position: relative;
+  top: -3px;
+  right: 10px;
 }
