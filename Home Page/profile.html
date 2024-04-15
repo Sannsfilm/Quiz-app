@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-js="body">
+    <div class="container-profile">
+      <header class="header">
+        <h1>Quiz App</h1>
+      </header>
+
+      <main class="main-profile">
+        <section class="photo-and-name">
+          <img src="./pict/astronaut (1).svg" height="100" />
+          <h2>Susan</h2>
+          <h4>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s
+          </h4>
+        </section>
+
+        <section class="counter-container">
+          <div class="Question-counter">
+            <img
+              src="./pict/question-mark.svg"
+              height="30"
+              alt="questions-mark"
+            />
+            <p>13</p>
+          </div>
+
+          <div class="bookmark-counter">
+            <svg
+              class="bookmark-checked-profile"
+              data-name="Ebene 1"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              viewBox="0 0 200 200"
+            >
+              <path class="cls-1" d="M197,3H3v191l97-55,97,55V3h0Z" />
+            </svg>
+            <p>3</p>
+          </div>
+        </section>
+
+        <section class="settings-container">
+          <h3><i class="bi bi-gear"></i>Settings</h3>
+          <div class="dark-mode">
+            <p>Switch Mode</p>
+            <input type="checkbox" id="switch" class="checkbox" />
+            <label
+              for="switch"
+              role="switch"
+              class="toggle"
+              data-js="toggle-button"
+            >
+              <img src="./pict/moon.svg" height="23" />
+              <img src="./pict/sun.svg" height="23" />
+            </label>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <nav class="footer">
+          <a class="home-footer-profile" href="./index.html">
+            <img src="./pict/planet.svg" height="60" alt="bookmark-unchecked" />
+          </a>
+          <a class="bookmark-footer" href="./bookmarked.html">
+            <img
+              src="./pict/success (1).svg"
+              alt="bookmark-checked"
+              height="60"
+            />
+          </a>
+          <a class="profile-footer" href="./profile.html">
+            <img src="./pict/astronaut.svg" height="60" alt="profile" />
+          </a>
+        </nav>
+      </footer>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
