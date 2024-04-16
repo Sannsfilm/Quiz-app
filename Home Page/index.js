@@ -9,6 +9,9 @@ const modeElements = document.querySelectorAll([
   ".main-profile",
   ".footer",
   ".question-card",
+  ".container",
+  ".question-card:first-of-type",
+  ".question-card:last-of-type",
 ]);
 
 setMode();
