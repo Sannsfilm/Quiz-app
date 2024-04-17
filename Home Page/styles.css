@@ -34,8 +34,7 @@ body {
 .container {
   width: 100%;
   max-width: 960px;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 30px;
