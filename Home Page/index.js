@@ -1,6 +1,4 @@
-// console.clear();
-
-// Definisikan setMode
+// setMode function
 function setMode() {
   if (mode == "light") {
     modeElements.forEach((e) => {
@@ -11,10 +9,10 @@ function setMode() {
       e.className = e.className.replace("_light", "");
     });
   }
-  setupHideShowButtons(); // Panggil setupHideShowButtons saat mode diatur
+  setupHideShowButtons(); // called setupHideShowButtons
 }
 
-// Definisikan setupHideShowButtons
+//  setupHideShowButtons functions
 function setupHideShowButtons() {
   const hideShowButtons = document.querySelectorAll(
     '[data-js="hide-show-button"]'
@@ -36,7 +34,7 @@ function setupHideShowButtons() {
   });
 }
 
-// definisikan getCookie dan setCookie
+//  getCookie dan setCookie functions
 function setCookie(name, value, daysToExpire) {
   const expires = new Date();
   expires.setTime(expires.getTime() + daysToExpire * 24 * 60 * 60 * 1000); // Convert days to milliseconds
@@ -73,14 +71,28 @@ const modeElements = document.querySelectorAll([
 // Inisialisasi mode
 setMode();
 
-// Event listener untuk toggle button
-toggleButton.addEventListener("click", () => {
-  if (mode == "dark") {
-    setCookie("lightmode", "light", 365);
-    mode = "light";
-  } else {
-    mode = "dark";
-    setCookie("lightmode", "dark", 365);
-  }
-  setMode();
+// Event listener for show answer toggle button
+if (toggleButton) {
+  toggleButton.addEventListener("click", () => {
+    mode = mode === "dark" ? "light" : "dark";
+    setCookie("lightmode", mode, 365);
+    setMode();
+  });
+}
+
+// Event Listener for toggle bookmark unchecked and checked
+const bookmarkButton = document.querySelectorAll('[data-js="bookmark"]');
+
+bookmarkButton.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    const targetBookmark = event.target;
+
+    if (targetBookmark.classList.contains("bookmark-checked")) {
+      targetBookmark.classList.remove("bookmark-checked");
+      targetBookmark.classList.add("bookmark-unchecked");
+    } else {
+      targetBookmark.classList.add("bookmark-checked");
+      targetBookmark.classList.remove("bookmark-unchecked");
+    }
+  });
 });
