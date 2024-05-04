@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-js="body">
+    <div class="container-profile">
+      <header class="header">
+        <h1>Quiz App</h1>
+      </header>
+
+      <div class="main-content" data-js="main-content">
+        <main class="form">
+          <form data-js="form-container" class="form-container">
+            <section class="form-section">
+              <div class="your-question each-card">
+                <label for="question">Your question:</label>
+                <input
+                  type="text"
+                  id="question"
+                  name="question"
+                  required
+                  placeholder="please write here"
+                  data-js="question"
+                  maxlength="76"
+                />
+              </div>
+              <small>
+                (<span data-js="amountLeftQuestion">76</span> characters left)
+              </small>
+            </section>
+
+            <section class="form-section">
+              <div class="your-answer each-card">
+                <label for="answer">Your answer:</label>
+                <input
+                  type="text"
+                  id="answer"
+                  name="answer"
+                  required
+                  placeholder="please write here"
+                  data-js="answer"
+                  maxlength="150"
+                />
+              </div>
+
+              <small>
+                (<span data-js="amountLeftAnswer">150</span> characters left )
+              </small>
+            </section>
+
+            <section class="form-section">
+              <div class="tag each-card">
+                <label for="tag">Tag:</label>
+                <input
+                  type="text"
+                  id="id"
+                  name="id"
+                  required
+                  placeholder="please write here"
+                  data-js="tag"
+                />
+                <!-- <p>A tags</p> -->
+              </div>
+            </section>
+
+            <button class="submit-button">Submit</button>
+          </form>
+        </main>
+      </div>
+
+      <footer>
+        <nav class="footer">
+          <a class="home-footer-profile" href="./index.html">
+            <img src="./pict/planet.svg" height="60" alt="bookmark-unchecked" />
+          </a>
+          <a class="bookmark-footer" href="./bookmarked.html">
+            <img
+              src="./pict/success (1).svg"
+              alt="bookmark-checked"
+              height="60"
+            />
+          </a>
+
+          <a class="form-icon-nav" href="./form.html">
+            <img src="./pict/form.svg" height="81" alt="form-icon-nav" />
+          </a>
+
+          <a class="profile-footer" href="./profile.html">
+            <img src="./pict/astronaut.svg" height="60" alt="profile" />
+          </a>
+        </nav>
+      </footer>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+  <script src="./form.js"></script>
+</html>

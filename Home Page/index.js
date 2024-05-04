@@ -96,3 +96,21 @@ bookmarkButton.forEach((button) => {
     }
   });
 });
+
+function setupBookmarkButton() {
+  const bookmarkButton = document.querySelectorAll('[data-js="bookmark"]');
+
+  bookmarkButton.forEach((button) => {
+    button.addEventListener("click", (event) => {
+      const targetBookmark = event.target;
+
+      if (targetBookmark.classList.contains("bookmark-checked")) {
+        targetBookmark.classList.remove("bookmark-checked");
+        targetBookmark.classList.add("bookmark-unchecked");
+      } else {
+        targetBookmark.classList.add("bookmark-checked");
+        targetBookmark.classList.remove("bookmark-unchecked");
+      }
+    });
+  });
+}

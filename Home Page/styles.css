@@ -183,6 +183,11 @@ body {
   border-radius: 25px;
 }
 
+.form-icon-nav {
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+
 /*profile */
 
 .container-profile {
@@ -328,4 +333,55 @@ body {
   display: none;
 }
 
-/* javascript */
+/* end profile */
+
+/* start form */
+
+.form {
+  width: 100%;
+  gap: 30px;
+  justify-content: center;
+  padding-top: 10px;
+  color: white;
+  background-color: #b063dd87;
+  box-shadow: 4px 6px 20px 9px rgb(130, 64, 152);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.each-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  gap: 15px;
+}
+
+input[type="text"] {
+  padding: 1px 50px 50px 1px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #a1a2f9;
+  color: white;
+  border: 5px solid rgba(130, 64, 152, 0.438);
+}
+
+.submit-button:hover {
+  background-color: #00000057;
+}
+
+p {
+  color: turquoise;
+}
+
+.a-form.icon.nav {
+  margin-bottom: ;
+}
