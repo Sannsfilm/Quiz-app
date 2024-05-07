@@ -185,7 +185,7 @@ body {
 
 .form-icon-nav {
   border-radius: 25px;
-  margin-bottom: 25px;
+  background-color: #9ec0ff;
 }
 
 /*profile */
@@ -381,5 +381,3 @@ input[type="text"] {
 p {
   color: turquoise;
 }
-
-
