@@ -183,7 +183,7 @@ body {
   border-radius: 25px;
 }
 
-.form-icon-nav {
+.form-icon-nav-page {
   border-radius: 25px;
   background-color: #9ec0ff;
 }
@@ -380,4 +380,66 @@ input[type="text"] {
 
 p {
   color: turquoise;
+}
+
+/* start easyquiz */
+
+.app {
+  color: white;
+  background-color: #b063dd87;
+  box-shadow: 4px 6px 20px 9px rgb(130, 64, 152);
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+}
+.app h2 {
+  padding: 20px 0;
+  color: wh;
+}
+
+.btn {
+  background-color: white;
+  color: #222;
+  font-weight: 500;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+  border: solid #a1a2f9;
+}
+/* if correct answer already appear, it can't click on any button only next button */
+
+.btn:hover.btn:hover:not([disababled]) {
+  background-color: black;
+  color: #fff;
+}
+.btn:disabled {
+  cursor: no-drop;
+}
+
+#next-btn {
+  background-color: rgb(158 192 255);
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 10px;
+  cursor: pointer;
+  border: solid #a1a2f9;
+  display: none;
+}
+
+.correct {
+  background: #9aeabc;
+}
+
+.incorrect {
+  background: #ff9393;
 }
